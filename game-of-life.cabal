@@ -1,0 +1,29 @@
+name:                game-of-life
+version:             0.1.0.0
+synopsis:            A haskell implementation of Conway's game of life
+description:         Please see README.md
+homepage:            http://github.com/pmikkelsen/game-of-life#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Peter Mikkelsen
+maintainer:          petermikkelsen10@gmail.com
+copyright:           2016 Peter Mikkelsen
+build-type:          Simple
+
+cabal-version:       >=1.10
+
+executable game-of-life-exe
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  ghc-options:         -O2
+  build-depends:       base
+                     , sdl2
+                     , linear
+                     , vector
+                     , random
+                     , containers
+  default-language:    Haskell2010
+
+source-repository head
+  type:     git
+  location: https://github.com/pmikkelsen/game-of-life
